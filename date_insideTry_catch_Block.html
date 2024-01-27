@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEMO TASK</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div class="outerContainer">
+        <h1 id="pastingArea"></h1>
+        <h2 id="nonEC"></h2>
+    </div>
+
+    <script>
+        var pasteDetails = document.getElementById("pastingArea");
+        var comDetails;
+        var is
+        var hrs = 0;
+        var min = 0;
+        var sec = 0;
+        try {
+            comDetails = new Date();
+            hrs = comDetails.getHours();
+            min = comDetails.getMinutes();
+            sec = comDetails.getSeconds();
+            is;
+            if (hrs < 12) {
+                is = "am";
+            } else {
+                is = "pm";
+            }
+            pastingArea.innerHTML = `hey there => ${hrs} : ${min} : ${sec} : ${is}`;
+        } catch (error) {
+            console.log("Something went Wrong");
+            pastingArea.innerHTML = `Internal ErrorOccured ${hrs} : ${min} : ${sec} ${is}`;
+        }
+
+        
+        
+    </script>
+</body>
+
+</html>
